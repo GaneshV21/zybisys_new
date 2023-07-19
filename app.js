@@ -33,7 +33,9 @@ function ob(title,content){
         para1.innerHTML=arr[i]['content']
 
 
-        edit.onclick=function(){
+        edit.onclick=()=>{
+            let titles=document.querySelector("#Title")
+            let contents=document.querySelector("#Content")
             titles.innerHTML=para.innerText
             contents.innerHTML=para1.innerText
             console.log(titles,contents)
@@ -56,9 +58,6 @@ btn.addEventListener("click",(e) =>{
     let title1=titles.value
     let content1=contents.value
     ob(title1,content1)
-    
-    
-
 })
 
 
